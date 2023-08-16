@@ -1,8 +1,13 @@
 import { useState } from "react";
-import "./App.css";
 
-function App() {
-  return <></>;
-}
+const App = () => {
+  return (
+    <>
+      <div className='flex flex-row justify-center'>
+        <h1 className='font-bold text-white'>Gaming Template v1</h1>
+      </div>
+    </>
+  );
+};
 
 export default App;
