@@ -20,19 +20,32 @@ const Navigation = () => {
 
   return (
     <div className='h-16'>
-      <div className='flex flex-col items-center justify-center w-full h-full border-t border-b'>
+      <div className='flex flex-col items-center justify-center w-full h-full border-t border-b bg-red-900'>
         <ul className='flex items-center justify-center w-full h-full'>
           {navLinks.map((link) => (
             <li key={link.id} className='px-4 py-2'>
               {link.subNavLinks ? (
                 <Button
-                  color='primary'
                   onClick={(e) => handlePopoverOpen(e, link.subNavLinks)}
+                  style={{
+                    backgroundColor: "rgb(145, 37, 37)",
+                    color: "white",
+                    boxShadow: "1px 3px 3px 1px rgba(0, 0, 0, 0.2)",
+                  }}
+                  size='large'
                 >
                   {link.name}
                 </Button>
               ) : (
-                <Button color='primary' href={link.path}>
+                <Button
+                  href={link.path}
+                  style={{
+                    backgroundColor: "rgb(145, 37, 37)",
+                    color: "white",
+                    boxShadow: "1px 3px 3px 1px rgba(0, 0, 0, 0.2)",
+                  }}
+                  size='large'
+                >
                   {link.name}
                 </Button>
               )}
@@ -48,7 +61,7 @@ const Navigation = () => {
                   }}
                   transformOrigin={{
                     vertical: "top",
-                    horizontal: "center",
+                    horizontal: "left",
                   }}
                   slotProps={{
                     paper: {
