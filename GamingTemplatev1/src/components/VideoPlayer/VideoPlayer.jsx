@@ -16,12 +16,8 @@ const VideoPlayer = ({}) => {
         <h1 className='text-2xl font-bold text-white'>Highlights</h1>
       </div>
       <div className='flex flex-1 justify-center'>
-        <div className='w-[642px] border justify-center'>
-          <YouTube
-            videoId='eGTILv7NijU?si=8NKLyKYmPMDguvJ-'
-            opts={opts}
-            onReady={(event) => console.log("Video is ready!")}
-          />
+        <div className='w-[642px] h-[392px] border border-black justify-center shadow-3xl shadow-white'>
+          <YouTube videoId='eGTILv7NijU?si=8NKLyKYmPMDguvJ-' opts={opts} />
         </div>
       </div>
     </>

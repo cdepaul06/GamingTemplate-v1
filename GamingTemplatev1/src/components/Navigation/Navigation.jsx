@@ -20,8 +20,8 @@ const Navigation = ({}) => {
   const open = Boolean(anchorEl);
 
   return (
-    <>
-      <div className='flex flex-1 justify-end'>
+    <div className='flex flex-col'>
+      <div className='flex flex-1 justify-end w-full'>
         <Button
           href='/login'
           style={{
@@ -114,7 +114,7 @@ const Navigation = ({}) => {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
