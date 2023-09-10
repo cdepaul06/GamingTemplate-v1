@@ -12,11 +12,8 @@ const VideoPlayer = ({}) => {
 
   return (
     <>
-      <div className='flex flex-1 justify-center pt-10 pb-5'>
-        <h1 className='text-2xl font-bold text-white'>Highlights</h1>
-      </div>
-      <div className='flex flex-1 justify-center'>
-        <div className='w-[642px] h-[392px] border border-black justify-center shadow-3xl shadow-white'>
+      <div className='flex flex-1 justify-center mt-10'>
+        <div className='w-[642px] h-[392px] justify-center'>
           <YouTube videoId='eGTILv7NijU?si=8NKLyKYmPMDguvJ-' opts={opts} />
         </div>
       </div>
